@@ -1,0 +1,26 @@
+<h1>Clase de Frameworks Frontend con TypeScript</h1>
+<h2> {{name}} </h2>
+<h2>{{ 3 + 5 }}</h2>
+<hr>
+<h2>String Interpolation</h2>
+<h2>
+  {{'Hola'.repeat(4)}}
+</h2>
+<hr>
+<h2>Event Binding</h2>
+<button (click)="saludo()">Saludar</button>
+<button (click)="suma()">Suma</button>
+<hr>
+
+<h2>Property Binding</h2>
+<img [src]="urlImagen" alt="">
+
+<hr>
+<input
+type="text"
+[name]="nombreCampo"
+[placeholder]="nombrePlaceholder"
+(change)="recibirValor($event)"
+>
+
+
