@@ -5,7 +5,7 @@ import { Labs } from './pages/Labs/labs'
 export const routes: Routes = [
   {
     path: '',
-    component: Home
+    component: Labs
   },
   {
     path: 'inicio',

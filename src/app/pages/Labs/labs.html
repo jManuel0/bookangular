@@ -1,26 +1,54 @@
-<h1>Clase de Frameworks Frontend con TypeScript</h1>
-<h2> {{name}} </h2>
-<h2>{{ 3 + 5 }}</h2>
-<hr>
-<h2>String Interpolation</h2>
+<h1>Clase de framework con TypeScript</h1>
+<h2>{{ name }}</h2>
+<h2>{{ edad() }}</h2>
+<h2>{{ email }}</h2>
+
+
 <h2>
-  {{'Hola'.repeat(4)}}
+  {{ 'Hola'.repeat( 4) }}
 </h2>
-<hr>
-<h2>Event Binding</h2>
+
+<p>Hola soy {{person.name}},
+  tengo {{person.age}} años
+  y mi correo es {{person.email}}
+</p>
+
+<p>El color es: {{colores[0]}}</p>
+
 <button (click)="saludo()">Saludar</button>
-<button (click)="suma()">Suma</button>
 <hr>
 
-<h2>Property Binding</h2>
-<img [src]="urlImagen" alt="">
+<img [src]="imagenr" [alt]=""/>
 
 <hr>
-<input
-type="text"
+<input type="text"
 [name]="nombreCampo"
 [placeholder]="nombrePlaceholder"
-(change)="recibirValor($event)"
+(chage)="onChangeRecibirValor($event)"
+(input)="onInputRecibirValor($event)"
 >
 
+<hr>
+<input type="text"
+[name]="nombreCampo"
+[placeholder]="nombrePlaceholder"
+(keydown.shift="onkeySaludo()")
+>
 
+<h2>{{mascota()}}</h2>
+
+<hr>
+<h1>Estructuras de control</h1>
+
+@for (user of users; track user; let i = $index) {
+<div class="user-card" [id]="i">
+  <img [src]="user.image" [alt]="user.name" class="user-avatar">
+  <h2 class="user-name"> {{user.name}} </h2>
+  <span class="user-position">{{user.position}}</span>
+  <span class="user-email">{{user.email}}</span>
+  <div class="user-status">
+    <span class="status-dot"></span>
+    Activo
+  </div>
+</div>
+}
