@@ -9,17 +9,17 @@ import { Component, signal } from '@angular/core';
 export class Labs {
 
 
-  name = 'Diery Valencia';
-  edad = signal(25);
-  email = 'diery.valencia@gmail.com';
+  name = 'Juan Manuel Ordoñez';
+  edad = signal(20);
+  email = 'juanmaarmero30@gmail.com';
   imagenr = 'https://placehold.co/400';
   nombreCampo ='Ciudad';
   nombrePlaceholder = 'escribe tu ciudad';
 
   person = {
-    name: "Diery Valencia",
-    age: 25,
-    email: "dieryvale@gmail.com"
+    name: "Juan Manuel Ordoñez",
+    age: 20,
+    email: "juanmaarmero30@gmail.com"
   };
 
 colores = [{
